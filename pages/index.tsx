@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Header from '../components/header'
+import Main from '../components/main'
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +12,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen grid place-items-center">hello there</main>
+      <div className="min-h-screen bg-slate-50">
+        <Header />
+        <Main />
+      </div>
     </div>
   )
 }
